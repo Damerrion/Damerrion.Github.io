@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projecten van Tijmen</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+    <div id="menu"></div>
+    <div class="content-box">
+        <h1>Mijn Projecten</h1>
+        <p>Hier vind je een overzicht van projecten waar ik aan gewerkt heb:</p>
+        <ul style="list-style: none; padding: 0; font-size: 1.1em;">
+            <li><a href="portfolio.html" style="color: #333; text-decoration: none;">1. Portfolio Website</a></li>
+            <li><a href="webapp.html" style="color: #333; text-decoration: none;">2. Schoolproject: Webapplicatie</a></li>
+            <li><a href="discordbot.html" style="color: #333; text-decoration: none;">3. Discord Bot</a></li>
+            <li><a href="game.html" style="color: #333; text-decoration: none;">4. Game Prototype</a></li>
+            <li>5. Overige projecten</li>
+        </ul>
+    </div>
+    <script>
+
+fetch('menu.html')
+
+.then(response => response.text())
+
+.then(data => {
+
+document.getElementById('menu').innerHTML = data;
+
+});
+
+</script>
+</body>
+</html>

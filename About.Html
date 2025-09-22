@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tijmen's Hobby's</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+<div id="menu"></div>
+    <div class="content-box">
+        <h1>Mijn Hobby's</h1>
+        <p>Hier zijn een paar van mijn favoriete hobby's:</p>
+        <ul class="hobby-list">
+            <li>
+                <img src="computer.png" width="30" height="30" alt="Computer" class="hobby-icon">
+                Computers & Coderen
+            </li>
+            <li>
+                <img src="Music.png" width="30" height="30" alt="Muziek" class="hobby-icon">
+                Muziek luisteren & Metal
+            </li>
+            <li>
+                <img src="Longboard.png" width="30" height="30" alt="Longboard" class="hobby-icon">
+                Longboarden
+            </li>
+            <li>
+                <img src="Gaming.png" width="30" height="30" alt="Gamen" class="hobby-icon">
+                Gamen
+            </li>
+            <li>
+                <img src="Writing.png" width="30" height="30" alt="Schrijven" class=hobby-icon>
+                Schrijven & Wereldbouwen
+            </li>
+        </div>
+    </div>
+    <script>
+
+fetch('menu.html')
+
+.then(response => response.text())
+
+.then(data => {
+
+document.getElementById('menu').innerHTML = data;
+
+});
+
+</script>
+</body>
+</html>

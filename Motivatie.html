@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motivatie</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: 'GoudyBlockletter1911';
+            src: url('GoudyBlockletter1911.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        body {
+            background-image: url('background2.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+        }
+        .content-box {
+            background: linear-gradient(135deg, #f8fafc 80%, #e3e7ea 100%);
+            padding: 40px 32px;
+            border-radius: 32px;
+            max-width: 700px;
+            margin: 56px auto;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+            border: 2px solid #e0e0e0;
+            font-family: 'GoudyBlockletter1911', serif;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .content-box::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            border-radius: 32px;
+            pointer-events: none;
+            background: radial-gradient(ellipse at center, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.15) 60%, rgba(0,0,0,0) 100%);
+            z-index: 1;
+        }
+        .content-box > * {
+            position: relative;
+            z-index: 2;
+        }
+        .content-box .waar {
+            font-size: 10em;
+            color: #000;
+            letter-spacing: 0.1em;
+            margin: 0;
+        }
+        nav {
+            background: rgba(255,255,255,0.95);
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+            padding: 16px;
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.1em;
+            width: 700px;
+            margin: 32px auto 0 auto;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+   <div id="menu"></div>
+    <div class="motivatie-box">
+        <a href="echte-motivatie.html" style="text-decoration: none;">
+            <h1 class="waar" style="color: #000; cursor: pointer;">WAAR</h1>
+        </a>
+    </div>
+    <script>
+
+fetch('menu.html')
+
+.then(response => response.text())
+
+.then(data => {
+
+document.getElementById('menu').innerHTML = data;
+
+});
+
+</script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Tijmen</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('background2.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+        }
+        .content-box {
+            background: rgba(255, 255, 255, 0.85);
+            padding: 32px;
+            border-radius: 16px;
+            max-width: 600px;
+            margin: 48px auto;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+        }
+        .content-box h1,
+        .content-box p {
+            font-family: 'Montserrat', sans-serif;
+        }
+        nav {
+            background: rgba(255,255,255,0.95);
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+            padding: 16px;
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.1em;
+            width: 700px;
+            margin: 32px auto 0 auto;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div id="menu"></div>
+    <div class="content-box">
+        <h1>Contact</h1>
+        <p>Wil je contact opnemen met mij? Je kunt mij bereiken via onderstaande kanalen:</p>
+        <ul style="list-style: none; padding: 0; font-size: 1.1em;">
+            <li><strong>Prive-Email:</strong> <a href="mailto:tijmenbarten@gmail.com" style="color: #333;">tijmenbartem@gmail.com</a></li>
+            <li><strong>School-Email:</strong> <a href="mailto:Rv671236@edu.rocrivor.nl" style="color: #333;">Rv671236@edu.rocrivor.nl</a></li>
+            <li><strong>Discord:</strong> Damerrion</li>
+            <li><strong>Twitch:</strong> <a href="https://twitch.tv/Damerrion3003" target="_blank" style="color: #333;">Twitch</a></li>
+            <li><strong>YouTube:</strong> <a href="https://youtube.com/Damerrion" target="_blank" style="color: #333;">YouTube</a></li>
+        </ul>
+    </div>
+    <script>
+
+fetch('menu.html')
+
+.then(response => response.text())
+
+.then(data => {
+
+document.getElementById('menu').innerHTML = data;
+
+});
+
+</script>
+</body>
+</html>

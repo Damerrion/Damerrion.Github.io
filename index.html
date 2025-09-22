@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Tijmen</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+    
+<div id="menu"></div>
+    <div>
+    <div class="content-box">
+           <video width="600" height="400" autoplay loop>
+        <source src="My supervillain intro - Dork Points (360p, h264, youtube).mp4" type="video/mp4">
+       1 Your browser does not support the video tag. 
+    
+    </video>
+            <h1>Tijmen Barten</h1>
+        <p>Hallo, Ik ben Tijmen een creatieve ziel met een drive voor Computers, schrijven, coderen, gamen, en Longboarden. 
+        Ik heb een grote passie voor muziek, en ben ik een grote metal head. 
+        Naast school werk ik ook bij de Lidl in Zaltbommel als kassa, vakkenvuller en broodbakker. Ik ben echt een grote work-alcholic, en wil dus graag werken.
+        Wereldbouwen met tekeningen en het maken van culturen voor verschillende mensen of zelfs koninkrijk.</p>
+        <img src="mike.png" alt="mike">
+        <p>Dit is Mike Shinoda, een van mijn favoriete artisten. Mike is een van de lead-zangers van Linkin Park.</p>
+
+
+
+    <audio autoplay loop >
+        <source src="Doom Eternal OST - The Only Thing They Fear Is You (Mick Gordon) [Doom Eternal Theme].mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    </div>
+    <script>
+
+fetch('menu.html')
+
+.then(response => response.text())
+
+.then(data => {
+
+document.getElementById('menu').innerHTML = data;
+
+});
+
+</script>
+</body>
+</html>

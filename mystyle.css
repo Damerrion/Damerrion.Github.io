@@ -1,0 +1,41 @@
+        @font-face {
+            font-family: 'GoudyBlockletter1911';
+            src: url('GoudyBlockletter1911.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            background-image: url('background2.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+        }
+        .content-box {
+            background: rgba(255, 255, 255, 0.85);
+            padding: 32px;
+            border-radius: 16px;
+            max-width: 600px;
+            margin: 48px auto;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+        }
+        .content-box h1,
+        .content-box p {
+            font-family: 'GoudyBlockletter1911', serif;
+        }
+nav {
+    background: rgba(255,255,255,0.95); 
+    border-radius: 12px; 
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08); 
+    padding: 16px; 
+    display: flex; 
+    justify-content: center; 
+    gap: 32px; 
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 1.1em;}
+div {
+        width: 700px; 
+        margin: 32px auto 0 auto;}
+     
+

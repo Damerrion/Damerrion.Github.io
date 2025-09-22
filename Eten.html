@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mijn Favoriete Eten</title>
+    <style>
+        @font-face {
+            font-family: 'GoudyBlockletter1911';
+            src: url('GoudyBlockletter1911.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        body {
+            background-image: url('background2.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+        }
+        .portfolio-box {
+            background: linear-gradient(135deg, #f8fafc 80%, #e3e7ea 100%);
+            padding: 40px 32px;
+            border-radius: 32px;
+            max-width: 700px;
+            margin: 56px auto;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+            border: 2px solid #e0e0e0;
+            font-family: 'GoudyBlockletter1911', serif;
+        }
+        .portfolio-box h1 {
+            font-size: 2.4em;
+            color: #888;
+            margin-bottom: 16px;
+        }
+        .portfolio-box p {
+            font-size: 1.2em;
+            color: #333;
+            margin-bottom: 24px;
+        }
+        .portfolio-details {
+            background: #f0f2f5;
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+            color: #444;
+        }
+        .portfolio-details h2 {
+            color: #888;
+        }
+        nav {
+            background: rgba(255,255,255,0.95);
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+            padding: 16px;
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+            font-family: 'Goudyblockletter1911', sans-serif;
+            font-size: 1.1em;
+            width: 700px;
+            margin: 32px auto 0 auto;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+        }
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+
+        th, td {
+            border: 1px solid #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        caption {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .content-box {
+            background: rgba(255, 255, 255, 0.85);
+            padding: 32px;
+            border-radius: 16px;
+            max-width: 600px;
+            margin: 48px auto;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+        }
+        .content-box h1,
+        .content-box p {
+            font-family: 'GoudyBlockletter1911', serif;
+        }
+        nav {
+            background: rgba(255,255,255,0.95);
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+            padding: 16px;
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+            font-family: 'GoudyBlockletter1911', serif;
+            font-size: 1.1em;
+            width: 600px;
+            margin: 32px auto 0 auto;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+         <div id="menu"></div>
+    <table>
+        <caption>Mijn Favoriete Eten</caption>
+        <tr>
+            <th>Gerecht</th>
+            <th>Herkomst</th>
+        </tr>
+        <tr>
+            <td><img src="Sushi.png" alt="Sushi" style="width:200px; height:auto;"> </td>
+            <td>Japan</td>
+        </tr>
+        <tr>
+            <td><img src="Patat.png" alt="Patat" style="width:200px; height:auto;"> </td>
+            <td>België en Nederland</Nav></td>
+        </tr>    
+    </table>
+    <script>
+
+fetch('menu.html')
+
+.then(response => response.text())
+
+.then(data => {
+
+document.getElementById('menu').innerHTML = data;
+
+});
+
+</script>
+</body>
+</html>

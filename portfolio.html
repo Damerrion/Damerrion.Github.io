@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+    <div id="menu"></div>
+    <div class="content-box">
+        <h1 style="font-family: 'GoudyBlockletter1911', serif;">Portfolio Website</h1>
+        <p>Welkom op mijn portfolio website! Hier presenteer ik mijn werk, vaardigheden en interesses op een overzichtelijke manier.</p>
+        <div class="portfolio-details">
+            <h2 style="font-family: 'GoudyBlockletter1911', serif; color: #444;">Wat kun je hier vinden?</h2>
+            <ul style="font-size: 1.1em; margin-left: 18px;">
+                <li>Een overzicht van mijn projecten en schoolopdrachten</li>
+                <li>Mijn favoriete hobby's en interesses</li>
+                <li>Contactinformatie en social media links</li>
+                <li>Mijn motivatie en doelen</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+
+fetch('menu.html')
+
+.then(response => response.text())
+
+.then(data => {
+
+document.getElementById('menu').innerHTML = data;
+
+});
+
+</script>
+</body>
+</html>
